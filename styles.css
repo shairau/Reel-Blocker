@@ -1,0 +1,20 @@
+/* Hide Reels elements */
+a[href="/reels/"],
+a[href^="/reels"],
+[role="tablist"] a[href="/reels/"],
+div[role="dialog"][aria-label*="Reel"],
+svg[aria-label="Reels"] {
+    display: none !important;
+}
+
+/* Hide Explore page elements */
+a[href="/explore/"],
+a[href^="/explore"],
+svg[aria-label="Explore"] {
+    display: none !important;
+}
+
+/* Hide reels in feed */
+div[role="presentation"] article:has(div[role="presentation"] video) {
+    display: none !important;
+} 
